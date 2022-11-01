@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 
 
@@ -29,6 +29,8 @@ public class Main {
 
         driver.findElement(By.id("loginbtn")).click();
 
+
+        Thread.sleep(30000);
         driver.close();
 
     }
